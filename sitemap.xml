@@ -3,11 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://rsanjabi.github.io/projects/fwrs_overview/</loc>
+    <lastmod>2020-05-18T13:44:09-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rsanjabi.github.io/projects/</loc>
+    <lastmod>2020-05-18T14:01:35-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://rsanjabi.github.io/resume/</loc>
   </url>
   
   <url>
+    <loc>http://rsanjabi.github.io/projects/fwrs_deploy/</loc>
+    <lastmod>2020-05-18T14:01:35-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://rsanjabi.github.io/</loc>
+    <lastmod>2020-05-18T14:01:35-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rsanjabi.github.io/projects/fwrs_model/</loc>
+    <lastmod>2020-05-18T14:01:28-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rsanjabi.github.io/projects/fwrs_pipeline/</loc>
+    <lastmod>2020-05-18T14:01:21-07:00</lastmod>
   </url>
   
   <url>

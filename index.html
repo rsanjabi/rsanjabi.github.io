@@ -174,6 +174,8 @@ Rebecca Sanjabi
         
 
         
+            
+        
 
         
         
@@ -220,6 +222,369 @@ Rebecca Sanjabi
         <div class="container">
             <hr>
         </div>
+        
+        
+        
+        
+        
+        
+        
+            
+            
+<div class="section" id="projects">
+    
+    <div class="container">
+        <h2 class="title is-2 has-text-centered">
+            Projects
+        </h2>
+        <div class="section">
+            <div class="columns is-multiline">
+                
+                
+                
+                
+                
+                
+                  
+                  
+                
+                <div class="column is-half">
+                    <div class="card" data-target="#project-0">
+                        <div class="card-image">
+                            <figure class="image is-3by2">
+                                <a >
+                                    
+                                    
+                                    
+                                    <img src="http://rsanjabi.github.io/projects/fwrs_overview/DSC03807_hu1192055e3602ebd50beaf169c596958a_221759_490x0_resize_q75_box.jpeg" alt ="DSC03807.jpeg">
+                                    
+                                    
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="card-content has-text-centered top-pad">
+                            <a >
+                                Fanworks Recommender System Overview
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+                  
+                  
+                
+                <div class="column is-half">
+                    <div class="card" data-target="#project-1">
+                        <div class="card-image">
+                            <figure class="image is-3by2">
+                                <a >
+                                    
+                                    
+                                    
+                                    <img src="http://rsanjabi.github.io/projects/fwrs_deploy/DSC03804_hu1192055e3602ebd50beaf169c596958a_268082_490x0_resize_q75_box.jpeg" alt ="DSC03804.jpeg">
+                                    
+                                    
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="card-content has-text-centered top-pad">
+                            <a >
+                                Deploying - Fanworks RecSys
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+                  
+                  
+                
+                <div class="column is-half">
+                    <div class="card" data-target="#project-2">
+                        <div class="card-image">
+                            <figure class="image is-3by2">
+                                <a >
+                                    
+                                    
+                                    
+                                    <img src="http://rsanjabi.github.io/projects/fwrs_model/DSC03800_hu1192055e3602ebd50beaf169c596958a_1411168_490x0_resize_q75_box.jpeg" alt ="DSC03800.jpeg">
+                                    
+                                    
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="card-content has-text-centered top-pad">
+                            <a >
+                                Model Development - Fanwork Recsys
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+                  
+                  
+                
+                <div class="column is-half">
+                    <div class="card" data-target="#project-3">
+                        <div class="card-image">
+                            <figure class="image is-3by2">
+                                <a >
+                                    
+                                    
+                                    
+                                    <img src="http://rsanjabi.github.io/projects/fwrs_pipeline/DSC03813_hu1192055e3602ebd50beaf169c596958a_258708_490x0_resize_q75_box.jpeg" alt ="DSC03813.jpeg">
+                                    
+                                    
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="card-content has-text-centered top-pad">
+                            <a >
+                                Pipeline Development - Fanworks Recsys
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    
+    
+    <div class="modal" id="project-0">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            
+            <header class="modal-card-header bottom-pad">
+                <p class="modal-card-title has-text-centered">Fanworks Recommender System Overview</p>
+            </header>
+            
+
+            
+            
+            
+                
+                    
+                    
+                        <img src="http://rsanjabi.github.io/projects/fwrs_overview/DSC03807_hu1192055e3602ebd50beaf169c596958a_221759_640x0_resize_q75_box.jpeg" class="img-responsive" alt="DSC03807.jpeg">
+                    
+                
+            
+            
+
+            
+            <section class="modal-card-body markdown">
+                <h2 id="overview">Overview</h2>
+<p>Fans who want to read fanfiction, watch fanvids, listen to podfics (audio books of fanfiction) or read meta will invariably find themselves at the massive, community supported, volunteer run <a href="https://www.archiveofourown">Archive of Our Own</a> (or AO3). This Hugo award winning open-source based website archives over 6 million fanworks, for over 5 million registered users in 35 thousand fandoms.  As a community run and community focused non-profit it does a stellar job of its primary function which is saving and collating amatuer works. However, beyond basic filtering functions it provides no methods of recommending works to users.</p>
+<p>I wanted to provide an alternate method for fans to find new works and developed a recommender system to do just that at <a href="http://fanrecs.com">fanrecs.com</a></p>
+<p>Overview for technical audiences
+A) About AO3 and what makes it interesting
+B) Ethics
+TOS &amp; Scraping respectfully
+Using users data despite being public outside of the expectations of what it was originally used for
+C) Results - impact</p>
+<p>Format:</p>
+<ol>
+<li>Describe the problem</li>
+<li>Challenges</li>
+<li>Solutions</li>
+<li>Things I learned and future improvements</li>
+</ol>
+<p>Tech Stack:</p>
+<ul>
+<li>MacOS and VSCode for development</li>
+<li>Ubuntu for scraping Data</li>
+<li>Heroku</li>
+<li>Git</li>
+<li>CircleCI</li>
+<li>Python</li>
+<li>PostreSQL</li>
+<li>Scraping - beautifulsoup -&gt; scrapy</li>
+<li>Model - pandas and implicit</li>
+</ul>
+
+            </section>
+            
+        </div>
+        <button class="modal-close is-large" aria-label="close" data-target="#project-0"></button>
+    </div>
+    
+    
+    
+    <div class="modal" id="project-1">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            
+            <header class="modal-card-header bottom-pad">
+                <p class="modal-card-title has-text-centered">Deploying - Fanworks RecSys</p>
+            </header>
+            
+
+            
+            
+            
+                
+                    
+                    
+                        <img src="http://rsanjabi.github.io/projects/fwrs_deploy/DSC03804_hu1192055e3602ebd50beaf169c596958a_268082_640x0_resize_q75_box.jpeg" class="img-responsive" alt="DSC03804.jpeg">
+                    
+                
+            
+            
+
+            
+            <section class="modal-card-body markdown">
+                <p>Format:</p>
+<ol>
+<li>Describe the problem</li>
+<li>Challenges</li>
+<li>Solutions</li>
+<li>Things I learned and future improvements</li>
+</ol>
+<p>Tech Stack:</p>
+<ul>
+<li>MacOS and VSCode for development</li>
+<li>Ubuntu for scraping Data</li>
+<li>Heroku</li>
+<li>Git</li>
+<li>CircleCI</li>
+<li>Python</li>
+<li>PostreSQL</li>
+<li>Scraping - beautifulsoup -&gt; scrapy</li>
+<li>Model - pandas and implicit</li>
+</ul>
+
+            </section>
+            
+        </div>
+        <button class="modal-close is-large" aria-label="close" data-target="#project-1"></button>
+    </div>
+    
+    
+    
+    <div class="modal" id="project-2">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            
+            <header class="modal-card-header bottom-pad">
+                <p class="modal-card-title has-text-centered">Model Development - Fanwork Recsys</p>
+            </header>
+            
+
+            
+            
+            
+                
+                    
+                    
+                        <img src="http://rsanjabi.github.io/projects/fwrs_model/DSC03800_hu1192055e3602ebd50beaf169c596958a_1411168_640x0_resize_q75_box.jpeg" class="img-responsive" alt="DSC03800.jpeg">
+                    
+                
+            
+            
+
+            
+            <section class="modal-card-body markdown">
+                <p>Format:</p>
+<ol>
+<li>Describe the problem</li>
+<li>Challenges</li>
+<li>Solutions</li>
+<li>Things I learned and future improvements</li>
+</ol>
+<p>Tech Stack:</p>
+<ul>
+<li>MacOS and VSCode for development</li>
+<li>Ubuntu for scraping Data</li>
+<li>Heroku</li>
+<li>Git</li>
+<li>CircleCI</li>
+<li>Python</li>
+<li>PostreSQL</li>
+<li>Scraping - beautifulsoup -&gt; scrapy</li>
+<li>Model - pandas and implicit</li>
+</ul>
+
+            </section>
+            
+        </div>
+        <button class="modal-close is-large" aria-label="close" data-target="#project-2"></button>
+    </div>
+    
+    
+    
+    <div class="modal" id="project-3">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            
+            <header class="modal-card-header bottom-pad">
+                <p class="modal-card-title has-text-centered">Pipeline Development - Fanworks Recsys</p>
+            </header>
+            
+
+            
+            
+            
+                
+                    
+                    
+                        <img src="http://rsanjabi.github.io/projects/fwrs_pipeline/DSC03813_hu1192055e3602ebd50beaf169c596958a_258708_640x0_resize_q75_box.jpeg" class="img-responsive" alt="DSC03813.jpeg">
+                    
+                
+            
+            
+
+            
+            <section class="modal-card-body markdown">
+                <p>Format:</p>
+<ol>
+<li>Describe the problem</li>
+<li>Challenges</li>
+<li>Solutions</li>
+<li>Things I learned and future improvements</li>
+</ol>
+<p>Tech Stack:</p>
+<ul>
+<li>MacOS and VSCode for development</li>
+<li>Ubuntu for scraping Data</li>
+<li>Heroku</li>
+<li>Git</li>
+<li>CircleCI</li>
+<li>Python</li>
+<li>PostreSQL</li>
+<li>Scraping - beautifulsoup -&gt; scrapy</li>
+<li>Model - pandas and implicit</li>
+</ul>
+
+            </section>
+            
+        </div>
+        <button class="modal-close is-large" aria-label="close" data-target="#project-3"></button>
+    </div>
+    
+    
+    <div class="container has-text-centered top-pad">
+    <a href="#top">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+</div>
+
+</div>
+
+<div class="container"><hr></div>
+
+
         
         
         
