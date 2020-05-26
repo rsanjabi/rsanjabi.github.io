@@ -6,7 +6,7 @@
     <description>Recent content on Rebecca Sanjabi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 May 2020 14:01:35 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2020 16:11:30 -0700</lastBuildDate>
     
 	<atom:link href="http://rsanjabi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,7 +17,17 @@
       <pubDate>Mon, 18 May 2020 13:44:09 -0700</pubDate>
       
       <guid>http://rsanjabi.github.io/projects/fwrs_overview/</guid>
-      <description>Overview Fans who want to read fanfiction, watch fanvids, listen to podfics (audio books of fanfiction) or read meta will invariably find themselves at the massive, community supported, volunteer run Archive of Our Own (or AO3). This Hugo award winning open-source based website archives over 6 million fanworks, for over 5 million registered users in 35 thousand fandoms. As a community run and community focused non-profit it does a stellar job of its primary function which is saving and collating amatuer works.</description>
+      <description>Fans who want to read fanfiction will invariably find themselves at the massive, community-supported, volunteer-run Archive of Our Own (or AO3 for short). This Hugo award-winning, open-source based website archives over 6 million fanworks, for over 5 million registered users in 35,000 fandoms. As a community-run and community-focused non-profit, it does a stellar job of its primary function, which is saving and collating amateur works. However, beyond essential filtering functions, it provides no methods of recommending works to users.</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>http://rsanjabi.github.io/project_work/</link>
+      <pubDate>Sun, 24 May 2020 16:11:30 -0700</pubDate>
+      
+      <guid>http://rsanjabi.github.io/project_work/</guid>
+      <description>Personal projects I&amp;rsquo;ve been working on.
+All code on github. Details below.</description>
     </item>
     
   </channel>

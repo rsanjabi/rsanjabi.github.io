@@ -23,7 +23,11 @@ Pipeline Development - Fanworks Recsys - Rebecca Sanjabi
 
 
 
-<meta property="og:image" content="http://rsanjabi.github.io/projects/fwrs_pipeline/DSC03813.jpeg"/>
+
+<meta property="og:image" content="http://rsanjabi.github.io/home/rebecca.jpg"/>
+
+<meta property="og:image" content="http://rsanjabi.github.io/home/rebecca_headshot2.JPG"/>
+
 
 
 
@@ -124,11 +128,20 @@ Pipeline Development - Fanworks Recsys - Rebecca Sanjabi
     <div class="container markdown top-pad">
         <p>Format:</p>
 <ol>
-<li>Describe the problem</li>
+<li>Describe the problem
+* Extract: scraping - approach
+* Transform:
+* Load: selected a postgresql database but since its a single table, wondering if a NoSQL/JSON format would have worked better or just as efficiently?</li>
 <li>Challenges</li>
 <li>Solutions</li>
 <li>Things I learned and future improvements</li>
 </ol>
+<ul>
+<li>Realizing I&rsquo;m working with streaming data source but I have to treat it like a batch process. How does that impact how the data is stored? (For example, almost no historical data.) Reflection of the fact that ethically if a user doesn&rsquo;t want their work there I can&rsquo;t think of a compelling reason to not respect that.</li>
+<li>Backfill and updating are two different problems.</li>
+<li>Constraints - respectful scraping, following robots.txt and erring on the side of caution with regards to server requests both shaped the solution significantly. Price was also another minor constraint. At this pointI haven&rsquo;t gotten much user feedback but at some point things like up-time and performance/response will be more important. (OVERALL CONSTRAINT or DEPLOYMENT CONSTRAINT)</li>
+<li>Setting up directory structure for projects and developing modules and packages is still a learning experience. I&rsquo;m not confident I made the wisest choice and am grateful for the tutorials and templates I&rsquo;ve found.</li>
+</ul>
 <p>Tech Stack:</p>
 <ul>
 <li>MacOS and VSCode for development</li>

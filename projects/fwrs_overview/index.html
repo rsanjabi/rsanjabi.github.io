@@ -23,7 +23,11 @@ Fanworks Recommender System Overview - Rebecca Sanjabi
 
 
 
-<meta property="og:image" content="http://rsanjabi.github.io/projects/fwrs_overview/DSC03807.jpeg"/>
+
+<meta property="og:image" content="http://rsanjabi.github.io/home/rebecca.jpg"/>
+
+<meta property="og:image" content="http://rsanjabi.github.io/home/rebecca_headshot2.JPG"/>
+
 
 
 
@@ -128,46 +132,13 @@ Fanworks Recommender System Overview - Rebecca Sanjabi
                 
     <div class="container markdown top-pad">
         
-        <div class="has-text-centered">
-            
-            
-                
-                    
-                    
-                        <img src="/projects/fwrs_overview/DSC03807_hu1192055e3602ebd50beaf169c596958a_221759_1000x0_resize_q75_box.jpeg" class="img-responsive" alt="DSC03807.jpeg">
-                    
-                
-            
-        </div>
-        
-        <h2 id="overview">Overview</h2>
-<p>Fans who want to read fanfiction, watch fanvids, listen to podfics (audio books of fanfiction) or read meta will invariably find themselves at the massive, community supported, volunteer run <a href="https://www.archiveofourown">Archive of Our Own</a> (or AO3). This Hugo award winning open-source based website archives over 6 million fanworks, for over 5 million registered users in 35 thousand fandoms.  As a community run and community focused non-profit it does a stellar job of its primary function which is saving and collating amatuer works. However, beyond basic filtering functions it provides no methods of recommending works to users.</p>
-<p>I wanted to provide an alternate method for fans to find new works and developed a recommender system to do just that at <a href="http://fanrecs.com">fanrecs.com</a></p>
-<p>Overview for technical audiences
-A) About AO3 and what makes it interesting
-B) Ethics
-TOS &amp; Scraping respectfully
-Using users data despite being public outside of the expectations of what it was originally used for
-C) Results - impact</p>
-<p>Format:</p>
-<ol>
-<li>Describe the problem</li>
-<li>Challenges</li>
-<li>Solutions</li>
-<li>Things I learned and future improvements</li>
-</ol>
-<p>Tech Stack:</p>
-<ul>
-<li>MacOS and VSCode for development</li>
-<li>Ubuntu for scraping Data</li>
-<li>Heroku</li>
-<li>Git</li>
-<li>CircleCI</li>
-<li>Python</li>
-<li>PostreSQL</li>
-<li>Scraping - beautifulsoup -&gt; scrapy</li>
-<li>Model - pandas and implicit</li>
-</ul>
+        <p>Fans who want to read fanfiction will invariably find themselves at the massive, community-supported, volunteer-run <a href="https://www.archiveofourown">Archive of Our Own</a> (or AO3 for short). This Hugo award-winning, open-source based website archives over 6 million fanworks, for over 5 million registered users in 35,000 fandoms.  As a community-run and community-focused non-profit, it does a stellar job of its primary function, which is saving and collating amateur works. However, beyond essential filtering functions, it provides no methods of recommending works to users.</p>
+<p>I wanted to provide an alternate method for fans to find new works and developed a recommender system to do just that at <a href="http://fanrecs.com">fanrecs.com</a>.  AO3 users have the option of leaving kudos on fanworks (fan-created items like fiction, art, videos, or commentary).   These kudos are the basis for an item to item, implicit, collaborative filtering based model. Hosted on a web-based microservice,  one can enter in the id of a favorite work and get suggestions for other works they might enjoy.</p>
+<p>The project has three major technical components:</p>
+<p>The first involves ETL or data engineering work - scraping data and loading it into a database. Tech stack during this phase was Python, PostgreSQL, BeautifulSoup, cron/Linux, git.
+Model building. Jupyter Notebook, the Implicit package, Numpy, Pandas.
+Deploying the model. Flask, CircleCI, Heroku</p>
+<p>Each component has sections discussing the problem, solutions, and things I learned along the way, as well as future directions. It&rsquo;s been a fun project, but there are still plenty of features I would like to add as well as user comments and feedback to incorporate.</p>
 
     </div>
     
