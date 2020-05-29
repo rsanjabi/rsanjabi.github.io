@@ -23,11 +23,7 @@ Fanworks Recommender System Overview - Rebecca Sanjabi
 
 
 
-
-<meta property="og:image" content="http://rsanjabi.github.io/home/rebecca.jpg"/>
-
-<meta property="og:image" content="http://rsanjabi.github.io/home/rebecca_headshot2.JPG"/>
-
+<meta property="og:image" content="http://rsanjabi.github.io/projects/fwrs_overview/ao3_fandom.jpg"/>
 
 
 
@@ -132,12 +128,26 @@ Fanworks Recommender System Overview - Rebecca Sanjabi
                 
     <div class="container markdown top-pad">
         
+        <div class="has-text-centered">
+            
+            
+                
+                    
+                    
+                        <img src="/projects/fwrs_overview/ao3_fandom_hu6e43b16eb4492ba94e2dd73c6d815f03_356745_1000x0_resize_q75_box.jpg" class="img-responsive" alt="ao3_fandom.jpg">
+                    
+                
+            
+        </div>
+        
         <p>Fans who want to read fanfiction will invariably find themselves at the massive, community-supported, volunteer-run <a href="https://www.archiveofourown">Archive of Our Own</a> (or AO3 for short). This Hugo award-winning, open-source based website archives over 6 million fanworks, for over 5 million registered users in 35,000 fandoms.  As a community-run and community-focused non-profit, it does a stellar job of its primary function, which is saving and collating amateur works. However, beyond essential filtering functions, it provides no methods of recommending works to users.</p>
 <p>I wanted to provide an alternate method for fans to find new works and developed a recommender system to do just that at <a href="http://fanrecs.com">fanrecs.com</a>.  AO3 users have the option of leaving kudos on fanworks (fan-created items like fiction, art, videos, or commentary).   These kudos are the basis for an item to item, implicit, collaborative filtering based model. Hosted on a web-based microservice,  one can enter in the id of a favorite work and get suggestions for other works they might enjoy.</p>
 <p>The project has three major technical components:</p>
-<p>The first involves ETL or data engineering work - scraping data and loading it into a database. Tech stack during this phase was Python, PostgreSQL, BeautifulSoup, cron/Linux, git.
-Model building. Jupyter Notebook, the Implicit package, Numpy, Pandas.
-Deploying the model. Flask, CircleCI, Heroku</p>
+<ul>
+<li>The <a href="../fwrs_pipeline/">first involves ETL</a> - scraping data and loading it into a database. Tech stack during this phase was Python, PostgreSQL, BeautifulSoup, cron/Linux, git.</li>
+<li><a href="../fwrs_model/">Model building</a>. Jupyter Notebook, the Implicit package, Numpy, Pandas.</li>
+<li><a href="../fwrs_deploy/">Deploying the model</a>. Flask, CircleCI, Heroku</li>
+</ul>
 <p>Each component has sections discussing the problem, solutions, and things I learned along the way, as well as future directions. It&rsquo;s been a fun project, but there are still plenty of features I would like to add as well as user comments and feedback to incorporate.</p>
 
     </div>

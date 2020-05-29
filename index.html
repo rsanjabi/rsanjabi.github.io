@@ -181,21 +181,15 @@ Rebecca Sanjabi
         
         
         
-        
-        
 
         
         <div class="section" id="about">
             <div class="container">
-                <h2 class="title is-2 has-text-centered">About</h2>
+                <h2 class="title is-2 has-text-centered"></h2>
                 
                 <div class="markdown has-text-centered">
-                    <p>A computer scientist by training, I LOVE data - pipeline building, exploring, visualizing, or machine learning. I especially enjoy full-stack problems, from gathering data through deploying solutions. I speak Python, SQL, scikit-learn, and pandas. When I&rsquo;m not playing with data, I like to garden, meditate, or write.</p>
+                    <p>A computer scientist by training, I LOVE data, whether it&rsquo;s ETL, exploring, visualizing, or machine learning. I especially enjoy full-stack problems, from gathering data through deploying solutions. I speak Python, SQL, and pandas. When I&rsquo;m not playing with data, I like to garden, meditate, or write.</p>
 <p>I&rsquo;m currently seeking opportunities as a data engineer or data scientist in San Francisco or remote.</p>
-<p><strong>Why You Should Hire Me</strong></p>
-<p><strong>Ability to self-teach</strong>  While I have BS in Computer Science, I&rsquo;ve spent the last year bringing my skills up to modern standards and specializing in data concerns. I can handle the uncertainty that comes with changing times.</p>
-<p><strong>Curiosity</strong> I enjoy trying to understand what the data says or asking if there is a better way to engineer solutions. Solving problems are fun; looking deeper is even more fun.</p>
-<p><strong>Wholistic</strong> Having an eclectic professional background, including design training and management, has given me a broad experience base that helps when it comes to keeping business needs at the forefront of decision making.</p>
 
                 </div>
                 
@@ -211,6 +205,8 @@ Rebecca Sanjabi
         <div class="container">
             <hr>
         </div>
+        
+        
         
         
         
@@ -249,35 +245,17 @@ Rebecca Sanjabi
                             <figure class="image is-3by2">
                                 <a >
                                     
+                                    
+                                    
+                                    <img src="http://rsanjabi.github.io/projects/fwrs_overview/ao3_fandom_hu6e43b16eb4492ba94e2dd73c6d815f03_356745_490x0_resize_q75_box.jpg" alt ="ao3_fandom.jpg">
+                                    
+                                    
                                 </a>
                             </figure>
                         </div>
                         <div class="card-content has-text-centered top-pad">
                             <a >
                                 Fanworks Recommender System Overview
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                
-                
-                  
-                  
-                
-                <div class="column is-half">
-                    <div class="card" data-target="#project-1">
-                        <div class="card-image">
-                            <figure class="image is-3by2">
-                                <a  href="http://fanrecs.com" >
-                                    
-                                </a>
-                            </figure>
-                        </div>
-                        <div class="card-content has-text-centered top-pad">
-                            <a  href="http://fanrecs.com" >
-                                Deploying - Fanworks RecSys
                             </a>
                         </div>
                     </div>
@@ -303,15 +281,27 @@ Rebecca Sanjabi
             
 
             
+            
+            
+                
+                    
+                    
+                        <img src="http://rsanjabi.github.io/projects/fwrs_overview/ao3_fandom_hu6e43b16eb4492ba94e2dd73c6d815f03_356745_640x0_resize_q75_box.jpg" class="img-responsive" alt="ao3_fandom.jpg">
+                    
+                
+            
+            
 
             
             <section class="modal-card-body markdown">
                 <p>Fans who want to read fanfiction will invariably find themselves at the massive, community-supported, volunteer-run <a href="https://www.archiveofourown">Archive of Our Own</a> (or AO3 for short). This Hugo award-winning, open-source based website archives over 6 million fanworks, for over 5 million registered users in 35,000 fandoms.  As a community-run and community-focused non-profit, it does a stellar job of its primary function, which is saving and collating amateur works. However, beyond essential filtering functions, it provides no methods of recommending works to users.</p>
 <p>I wanted to provide an alternate method for fans to find new works and developed a recommender system to do just that at <a href="http://fanrecs.com">fanrecs.com</a>.  AO3 users have the option of leaving kudos on fanworks (fan-created items like fiction, art, videos, or commentary).   These kudos are the basis for an item to item, implicit, collaborative filtering based model. Hosted on a web-based microservice,  one can enter in the id of a favorite work and get suggestions for other works they might enjoy.</p>
 <p>The project has three major technical components:</p>
-<p>The first involves ETL or data engineering work - scraping data and loading it into a database. Tech stack during this phase was Python, PostgreSQL, BeautifulSoup, cron/Linux, git.
-Model building. Jupyter Notebook, the Implicit package, Numpy, Pandas.
-Deploying the model. Flask, CircleCI, Heroku</p>
+<ul>
+<li>The <a href="../fwrs_pipeline/">first involves ETL</a> - scraping data and loading it into a database. Tech stack during this phase was Python, PostgreSQL, BeautifulSoup, cron/Linux, git.</li>
+<li><a href="../fwrs_model/">Model building</a>. Jupyter Notebook, the Implicit package, Numpy, Pandas.</li>
+<li><a href="../fwrs_deploy/">Deploying the model</a>. Flask, CircleCI, Heroku</li>
+</ul>
 <p>Each component has sections discussing the problem, solutions, and things I learned along the way, as well as future directions. It&rsquo;s been a fun project, but there are still plenty of features I would like to add as well as user comments and feedback to incorporate.</p>
 
             </section>
@@ -319,8 +309,6 @@ Deploying the model. Flask, CircleCI, Heroku</p>
         </div>
         <button class="modal-close is-large" aria-label="close" data-target="#project-0"></button>
     </div>
-    
-    
     
     
     <div class="container has-text-centered top-pad">
