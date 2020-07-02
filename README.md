@@ -4,4 +4,4 @@ This is the code used for my personal website, containing professional projects 
 
 You can find my it here: http://rebeccasanjabi.com
 
-![Image of rebeccasanjabi.com](img/main_screenshot.jpg)
+[[img/main_screenshot.jpg | height - 100 px]]
