@@ -123,6 +123,68 @@ Short-Term Rental Data Warehouse - Rebecca Sanjabi
                 
     <div class="container markdown top-pad">
         <p><a href="https://github.com/rsanjabi/short-term-rentals-warehouse">github repo</a></p>
+<h1 id="global-short-term-rentals---a-data-warehouse-and-dashboard">Global Short-Term Rentals - a Data Warehouse and Dashboard</h1>
+<p>The global short-term rentals project is a full data pipeline and warehouse. A dashboard allows for the exploration of the impact of short-term rental listings (Airbnb) on housing. Data is pulled from three separate public datasets and consists of over 35 million records from 2015-2020.
+<img src="img/dashboard.png" alt="Dashboard"></p>
+<h2 id="architecture">Architecture:</h2>
+<h3 id="overview">Overview</h3>
+<ul>
+<li>Python scripts perform API calls and web scraping for extraction and loading.</li>
+<li>Snowflake is used as a cloud-based data warehouse.</li>
+<li>DBT is used for transformations, data testing, and data documentation.</li>
+<li>Metabase is used for data visualizations.</li>
+</ul>
+<h3 id="data-sources">Data Sources</h3>
+<ul>
+<li>Scraped data from:
+<ul>
+<li><a href="http://insideairbnb.com/get-the-data.html">Inside Airbnb</a>. <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Public Domain Dedication</a>.</li>
+</ul>
+</li>
+<li>Kaggle
+<ul>
+<li><a href="https://www.kaggle.com/i2i2i2/cities-of-the-world">World Cities Population and Location</a>. CC0: Public Domain.</li>
+<li>Kaggle <a href="https://www.kaggle.com/debdutta/cost-of-living-index-by-country">Cost of Living Indices</a>. Original source <a href="https://www.numbeo.com/cost-of-living/rankings.jsp">Numbeo</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="etl-and-data-model">ETL and Data Model</h3>
+<p><img src="img/data_flow.png" alt="Data Flow and Star Schema"></p>
+<h3 id="dbt-model-dag">DBT Model DAG</h3>
+<p><img src="img/dbt_dag.png" alt="DBT Models Lineage Graph"></p>
+<h3 id="visualization">Visualization</h3>
+<h2 id="environment-setup">Environment Setup:</h2>
+<h3 id="to-reproduce-the-warehouse-you-will-need-to-have-these-cloud-based-accounts-set-up-prior-to-running-the-remaining-steps">To reproduce the warehouse, you will need to have these cloud-based accounts set up prior to running the remaining steps:</h3>
+<ol>
+<li>You will need to have a Kaggle account and authenticate using an API token. For more information, read Kaggle&rsquo;s <a href="https://www.kaggle.com/docs/api">API documentation</a>.</li>
+<li>You will need a <a href="https://trial.snowflake.com/">Snowflake account</a> with sysadmin privileges. They offer a 30-day trial with up to $400 in free usage. This project uses well under that, and no credit card is required until the limits are reached.</li>
+</ol>
+<h3 id="to-setup-the-warehouse">To setup the warehouse:</h3>
+<ol>
+<li>Download the repository and create a virtual environment.</li>
+<li>Install the required dependencies with <code>pip install -r requirements.txt</code>.</li>
+<li>Copy .env.example to a file called .env at the root level of the project. Add in relevant Snowflake variables.</li>
+<li>Run <code>python setup.py</code> to export credentials and other environment variables.</li>
+</ol>
+<h3 id="extract-load-and-transform-data">Extract, load, and transform data:</h3>
+<ol>
+<li>Setup users, databases, and warehouses on Snowflake. Use <code>src/create_warehouse.sql</code> as a guide.</li>
+<li>To extract datasets (scraping and API calls), run <code>python src/extract.py</code>. The script may take a few hours.</li>
+<li>To load data, run <code>python src/load.py</code>. Again, depending on your connection, will take awhile.</li>
+<li>To install dbt dependencies, from dbt subdirectory run <code>dbt deps</code>.</li>
+<li>To transform data, from dbt subdirectory run <code>dbt run</code>.</li>
+<li>To test your data, from dbt subdirectory run <code>dbt test</code>.</li>
+<li>To generate documentation, from dbt subdirectory run <code>dbt docs generate</code>, and <code>dbt docs serve</code> for locally hosted documentation.</li>
+</ol>
+<h3 id="visualization-1">Visualization:</h3>
+<ol>
+<li>Download and install <a href="https://www.metabase.com/start/">Metabase</a> on the platform of your choice (I used Heroku).</li>
+<li>Follow setup instructions for an admin user and add your Snowflake credentials.</li>
+<li>Create a new dashboard.</li>
+<li>Create questions for each card based on the files in <code>visualizations/</code>, adjusting the visualization component.</li>
+</ol>
+<h2 id="author">Author:</h2>
+<p>A personal project by Rebecca Sanjabi.</p>
 
     </div>
     <div class="container">
