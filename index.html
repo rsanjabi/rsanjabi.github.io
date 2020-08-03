@@ -77,7 +77,7 @@ Rebecca Sanjabi
                     <div class="fade-in three">
                         <div class="social-icons">
     
-    <a href="https://r_sanjabi.twitter.com/" >
+    <a href="https://twitter.com/r_sanjabi" >
         <i class="fab fab fa-twitter"></i>
     </a>
     
@@ -246,6 +246,34 @@ Rebecca Sanjabi
                                     
                                     
                                     
+                                    <img src="http://rsanjabi.github.io/projects/short-term-rentals/dashboard_hua6d7bff234bd5d01fc775c158b286d60_1361637_490x0_resize_box_2.png" alt ="dashboard.png">
+                                    
+                                    
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="card-content has-text-centered top-pad">
+                            <a >
+                                Short-Term Rental Data Warehouse
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+                  
+                  
+                
+                <div class="column is-half">
+                    <div class="card" data-target="#project-1">
+                        <div class="card-image">
+                            <figure class="image is-3by2">
+                                <a >
+                                    
+                                    
+                                    
                                     <img src="http://rsanjabi.github.io/projects/fwrs_overview/ao3_fandom_hu6e43b16eb4492ba94e2dd73c6d815f03_356745_490x0_resize_q75_box.jpg" alt ="ao3_fandom.jpg">
                                     
                                     
@@ -254,7 +282,7 @@ Rebecca Sanjabi
                         </div>
                         <div class="card-content has-text-centered top-pad">
                             <a >
-                                Fanworks Recommender System Overview
+                                Fanworks Recommender System
                             </a>
                         </div>
                     </div>
@@ -262,8 +290,6 @@ Rebecca Sanjabi
                 
             </div>
         </div>
-        
-
         
     </div>
     
@@ -275,7 +301,40 @@ Rebecca Sanjabi
         <div class="modal-card">
             
             <header class="modal-card-header bottom-pad">
-                <p class="modal-card-title has-text-centered">Fanworks Recommender System Overview</p>
+                <p class="modal-card-title has-text-centered">Short-Term Rental Data Warehouse</p>
+            </header>
+            
+
+            
+            
+            
+                
+                    
+                    
+                        <img src="http://rsanjabi.github.io/projects/short-term-rentals/dashboard_hua6d7bff234bd5d01fc775c158b286d60_1361637_640x0_resize_box_2.png" class="img-responsive" alt="dashboard.png">
+                    
+                
+            
+            
+
+            
+            <section class="modal-card-body markdown">
+                <p><a href="https://github.com/rsanjabi/short-term-rentals-warehouse">github repo</a></p>
+
+            </section>
+            
+        </div>
+        <button class="modal-close is-large" aria-label="close" data-target="#project-0"></button>
+    </div>
+    
+    
+    
+    <div class="modal" id="project-1">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            
+            <header class="modal-card-header bottom-pad">
+                <p class="modal-card-title has-text-centered">Fanworks Recommender System</p>
             </header>
             
 
@@ -302,11 +361,29 @@ Rebecca Sanjabi
 <li><a href="../fwrs_deploy/">Deploying the model</a>. Flask, CircleCI, Heroku</li>
 </ul>
 <p>Each component has sections discussing the problem, solutions, and things I learned along the way, as well as future directions. It&rsquo;s been a fun project, but there are still plenty of features I would like to add as well as user comments and feedback to incorporate.</p>
+<h4 id="work-in-progress">Work in Progress</h4>
+<ol>
+<li>Describe the problem</li>
+</ol>
+<ul>
+<li>Extract: scraping - approach</li>
+<li>Transform:</li>
+<li>Load: selected a postgresql database but since its a single table, wondering if a NoSQL/JSON format would have worked better or just as efficiently?</li>
+</ul>
+<ol start="2">
+<li>Things I learned and future improvements</li>
+</ol>
+<ul>
+<li>Realizing I&rsquo;m working with (slowly?) streaming data source but I have to treat it like a batch process. How does that impact how the data is stored?</li>
+<li>Backfill and updating are two different algorithms and should be get in mind when designing a solution.</li>
+<li>Constraints - respectful scraping, following robots.txt and erring on the side of caution with regards to server requests both shaped the solution significantly. Price was also another minor constraint. At this pointI haven&rsquo;t gotten much user feedback but at some point things like up-time and performance/response will be more important. (OVERALL CONSTRAINT or DEPLOYMENT CONSTRAINT)</li>
+<li>Setting up directory structure for projects and developing modules and packages is still a learning experience. I&rsquo;m not confident I made the wisest choice and am grateful for the tutorials and templates I&rsquo;ve found.</li>
+</ul>
 
             </section>
             
         </div>
-        <button class="modal-close is-large" aria-label="close" data-target="#project-0"></button>
+        <button class="modal-close is-large" aria-label="close" data-target="#project-1"></button>
     </div>
     
     
@@ -335,23 +412,7 @@ Rebecca Sanjabi
                 <h2 class="title is-2 has-text-centered">Resume</h2>
                 
                 <div class="markdown has-text-centered">
-                    <p>Skills include:</p>
-<p><strong>Software:</strong>
-• Python
-• Java, C++
-• Git
-• CI/CD (Circle CI)
-• Deploying Models (Flask, Heroku)
-• Cloud Services (AWS, GCP)</p>
-<p><strong>Data:</strong>
-• SQL
-• dbt
-• Data Modeling
-• Databases (PostgreSQL, Snowflake)
-• Data Visualization (Tableau, Matplotlib)
-• Web Scraping (Beautiful Soup, requests, Selenium)
-• Machine Learning (scikit-learn, Pandas )</p>
-<p>Complete CV found <a href="../resume">here.</a></p>
+                    <h4 id="complete-cvresume"><a href="../resume">Complete CV</a></h4>
 
                 </div>
                 
@@ -380,8 +441,6 @@ Rebecca Sanjabi
                     
                 </div>
                 
-                <p>My current local time is <span id="time" data-time-zone="America/Los_Angeles" data-time-format="h:mm A"></span>.</p>
-                
                 
                 <h3 class="subtitle is-3 has-text-centered top-pad">
                     <a href="mailto:rs@rebeccasanjabi.com">rs@rebeccasanjabi.com</a>
@@ -389,7 +448,7 @@ Rebecca Sanjabi
                 
                 <div class="social-icons">
     
-    <a href="https://r_sanjabi.twitter.com/" >
+    <a href="https://twitter.com/r_sanjabi" >
         <i class="fab fab fa-twitter"></i>
     </a>
     
@@ -448,13 +507,6 @@ Rebecca Sanjabi
 <script src="http://rsanjabi.github.io/js/bundleOwlCarousel.afccb665ffddf92101a8bc04b924a4a5b9a36c0ad0ad61024da751cdd8fd1ed9.js" integrity="sha256-r8y2Zf/d&#43;SEBqLwEuSSkpbmjbArQrWECTadRzdj9Htk="></script>
 
 
-        
-        
-        
-        
-        
-        
-        <script src="http://rsanjabi.github.io/js/bundleMoment.00f097d38e126139c76cdebf43c20ec084dd5db287b651f3607b0a7239b5958e.js" integrity="sha256-APCX044SYTnHbN6/Q8IOwITdXbKHtlHzYHsKcjm1lY4="></script>
         
     </body>
 

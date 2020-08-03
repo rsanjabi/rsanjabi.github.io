@@ -10,12 +10,12 @@
 <meta name="referrer" content="no-referrer">
 <meta name="description" content="Personal website of a data engineer. Resume and projects.">
 <title>
-Fanworks Recommender System Overview - Rebecca Sanjabi
+Fanworks Recommender System - Rebecca Sanjabi
 </title>
 
 
 
-        <meta property="og:title" content="Fanworks Recommender System Overview - Rebecca Sanjabi" />
+        <meta property="og:title" content="Fanworks Recommender System - Rebecca Sanjabi" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="Personal website of a data engineer. Resume and projects."/>
 <meta property="og:url" content="http://rsanjabi.github.io/projects/fwrs_overview/"/>
@@ -58,7 +58,7 @@ Fanworks Recommender System Overview - Rebecca Sanjabi
             
             <div class="container hero  fade-in one ">
                 
-                <h1 class="bold-title is-1">Fanworks Recommender System Overview</h1>
+                <h1 class="bold-title is-1">Fanworks Recommender System</h1>
                 
             </div>
             
@@ -149,6 +149,24 @@ Fanworks Recommender System Overview - Rebecca Sanjabi
 <li><a href="../fwrs_deploy/">Deploying the model</a>. Flask, CircleCI, Heroku</li>
 </ul>
 <p>Each component has sections discussing the problem, solutions, and things I learned along the way, as well as future directions. It&rsquo;s been a fun project, but there are still plenty of features I would like to add as well as user comments and feedback to incorporate.</p>
+<h4 id="work-in-progress">Work in Progress</h4>
+<ol>
+<li>Describe the problem</li>
+</ol>
+<ul>
+<li>Extract: scraping - approach</li>
+<li>Transform:</li>
+<li>Load: selected a postgresql database but since its a single table, wondering if a NoSQL/JSON format would have worked better or just as efficiently?</li>
+</ul>
+<ol start="2">
+<li>Things I learned and future improvements</li>
+</ol>
+<ul>
+<li>Realizing I&rsquo;m working with (slowly?) streaming data source but I have to treat it like a batch process. How does that impact how the data is stored?</li>
+<li>Backfill and updating are two different algorithms and should be get in mind when designing a solution.</li>
+<li>Constraints - respectful scraping, following robots.txt and erring on the side of caution with regards to server requests both shaped the solution significantly. Price was also another minor constraint. At this pointI haven&rsquo;t gotten much user feedback but at some point things like up-time and performance/response will be more important. (OVERALL CONSTRAINT or DEPLOYMENT CONSTRAINT)</li>
+<li>Setting up directory structure for projects and developing modules and packages is still a learning experience. I&rsquo;m not confident I made the wisest choice and am grateful for the tutorials and templates I&rsquo;ve found.</li>
+</ul>
 
     </div>
     
