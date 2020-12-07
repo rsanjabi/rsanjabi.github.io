@@ -142,31 +142,7 @@ Fanworks Recommender System - Rebecca Sanjabi
         
         <p>Fans who want to read fanfiction will invariably find themselves at the massive, community-supported, volunteer-run <a href="https://www.archiveofourown">Archive of Our Own</a> (or AO3 for short). This Hugo award-winning, open-source based website archives over 6 million fanworks, for over 5 million registered users in 35,000 fandoms.  As a community-run and community-focused non-profit, it does a stellar job of its primary function, which is saving and collating amateur works. However, beyond essential filtering functions, it provides no methods of recommending works to users.</p>
 <p>I wanted to provide an alternate method for fans to find new works and developed a recommender system to do just that at <a href="http://fanrecs.com">fanrecs.com</a>.  AO3 users have the option of leaving kudos on fanworks (fan-created items like fiction, art, videos, or commentary).   These kudos are the basis for an item to item, implicit, collaborative filtering based model. Hosted on a web-based microservice,  one can enter in the id of a favorite work and get suggestions for other works they might enjoy.</p>
-<p>The project has three major technical components:</p>
-<ul>
-<li>The <a href="../fwrs_pipeline/">first involves ETL</a> - scraping data and loading it into a database. Tech stack during this phase was Python, PostgreSQL, BeautifulSoup, cron/Linux, git.</li>
-<li><a href="../fwrs_model/">Model building</a>. Jupyter Notebook, the Implicit package, Numpy, Pandas.</li>
-<li><a href="../fwrs_deploy/">Deploying the model</a>. Flask, CircleCI, Heroku</li>
-</ul>
-<p>Each component has sections discussing the problem, solutions, and things I learned along the way, as well as future directions. It&rsquo;s been a fun project, but there are still plenty of features I would like to add as well as user comments and feedback to incorporate.</p>
-<h4 id="work-in-progress">Work in Progress</h4>
-<ol>
-<li>Describe the problem</li>
-</ol>
-<ul>
-<li>Extract: scraping - approach</li>
-<li>Transform:</li>
-<li>Load: selected a postgresql database but since its a single table, wondering if a NoSQL/JSON format would have worked better or just as efficiently?</li>
-</ul>
-<ol start="2">
-<li>Things I learned and future improvements</li>
-</ol>
-<ul>
-<li>Realizing I&rsquo;m working with (slowly?) streaming data source but I have to treat it like a batch process. How does that impact how the data is stored?</li>
-<li>Backfill and updating are two different algorithms and should be get in mind when designing a solution.</li>
-<li>Constraints - respectful scraping, following robots.txt and erring on the side of caution with regards to server requests both shaped the solution significantly. Price was also another minor constraint. At this pointI haven&rsquo;t gotten much user feedback but at some point things like up-time and performance/response will be more important. (OVERALL CONSTRAINT or DEPLOYMENT CONSTRAINT)</li>
-<li>Setting up directory structure for projects and developing modules and packages is still a learning experience. I&rsquo;m not confident I made the wisest choice and am grateful for the tutorials and templates I&rsquo;ve found.</li>
-</ul>
+<p>Currently recommendations are only on a subset of works (namely, Star Wars fandom circa May 2020) while I work out a way to scale the recommendations beyond 125k fics. Details on implementation can be found in my <a href="https://github.com/rsanjabi/narratives">GitHub repository</a></p>
 
     </div>
     
